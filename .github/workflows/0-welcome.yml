@@ -1,4 +1,9 @@
-name: Step 0, Welcome
+- name: Push changes to branch
+  run: |
+    git config user.name "GitHub Actions"
+    git config user.email "actions@github.com"
+    git pull origin my-pages --rebase
+    git push origin my-pagesname: Step 0, Welcome
 
 # This step triggers after the learner creates a new repository from the template.
 # This workflow updates from step 0 to step 1.
